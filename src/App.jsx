@@ -42,58 +42,57 @@ import ContactDetails from "./components/integrate_services/ContactDetails.jsx";
 function HomeLayout() {
   return (
     <>
-      {/* <Navbar /> */}
+      <Navbar />
       <Home />
       <Services />
       <Explore />
       <ClientsAndContact />
       <Contact />
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
 function AboutLayout() {
   return (
     <>
-      {/* <Navbar /> */}
+      <Navbar />
       <Container />
       <Description />
       <Clients />
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
 function ValuesLayout() {
   return (
     <>
-      {/* <Navbar /> */}
+      <Navbar />
       <Component />
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
 function Salesforce() {
   return (
     <>
-    {/* <Navbar /> */}
+    <Navbar />
       <Block />
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
 function Mulesoft() {
   return (
     <>
-    {/* <Navbar /> */}
+    <Navbar />
       <Page />
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
 function AiServices() {
   return (
     <>
-    {/* <Navbar /> */}
       <Navai />
       <Ai_home />
       <WhoWeAre />
@@ -102,7 +101,7 @@ function AiServices() {
       <AiToolbox />
       <OurApproach />
       <ContactSection />
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
@@ -121,8 +120,10 @@ function IntegrateService(){
 function ProductLayout() {
   return (
     <>
+    <Navbar />
       <Comp1 />
       <Comp2 />
+      <Footer />
     </>
   );
 }
@@ -131,19 +132,19 @@ function App() {
   return (
     <Router>
     {/* <> */}
-      <Navbar />
+      {/* <Navbar /> */}
       <Routes> 
         <Route path="/" element={<HomeLayout />} />
         <Route path="/AboutUs" element={<AboutLayout />} />
         <Route path="/OurValues" element={<ValuesLayout />} />
-        <Route  path="/Salesforce" element={<Salesforce />} />
+        <Route path="/Salesforce" element={<Salesforce />} />
         <Route path="/Mulesoft" element={<Mulesoft />} />
         <Route path="/AI" element={<AiServices />} />
         <Route path="/Integration" element={<IntegrateService />} />  
         <Route path="/Products" element={<ProductLayout />}/>
       
     </Routes>
-    <Footer />
+    {/* <Footer /> */}
     </Router>
     // </>
   );

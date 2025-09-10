@@ -1,7 +1,7 @@
 import React from "react";
 
 const WhoWeAre = () => (
-  <section className="bg-white py-5">
+  <section id="Whoweare" className="bg-white py-5">
     <div className="container">
       <h2 className="display-5 fw-bold text-center mb-3">Who We Are</h2>
       <p className="lead text-muted text-center mx-auto" style={{maxWidth: 920}}>
